@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods, 1 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.FlakySimulationTest" class="method navigator-link" hash-for-method="testFlakyScenario">testFlakyScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithFakerData">testCheckoutWithFakerData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginBoundary(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, secret_sauce, Epic sadface: Username and passwor...)">testLoginBoundary(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, secret_sauce, Epic sadface: Username and passwor...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginBoundary(&lt;script&gt;alert(1)&lt;/script&gt;, secret_sauce, Epic sadface: Username and password do not match any user i...)">testLoginBoundary(<script>alert(1)</script>, secret_sauce, Epic sadface: Username and password do not match any user i...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginBoundary(admin&#039; OR &#039;1&#039;=&#039;1, secret_sauce, Epic sadface: Username and password do not match any user in this se...)">testLoginBoundary(admin' OR '1'='1, secret_sauce, Epic sadface: Username and password do not match any user in this se...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginBoundary(standard_user, @#$%^&amp;*()_+{}[], Epic sadface: Username and password do not match any user in this se...)">testLoginBoundary(standard_user, @#$%^&*()_+{}[], Epic sadface: Username and password do not match any user in this se...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.UserLoginTest" class="method navigator-link" hash-for-method="testLoginFromJson(performance_glitch_user, secret_sauce, true, User bị delay khi đăng nhập)">testLoginFromJson(performance_glitch_user, secret_sauce, true, User bị delay khi đăng nhập)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.UserLoginTest" class="method navigator-link" hash-for-method="testLoginFromJson(admin_user, wrong_pass, false, Sai mật khẩu đăng nhập)">testLoginFromJson(admin_user, wrong_pass, false, Sai mật khẩu đăng nhập)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.UserLoginTest" class="method navigator-link" hash-for-method="testLoginFromJson(problem_user, secret_sauce, true, User bị lỗi hiển thị sản phẩm)">testLoginFromJson(problem_user, secret_sauce, true, User bị lỗi hiển thị sản phẩm)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.UserLoginTest" class="method navigator-link" hash-for-method="testLoginFromJson(standard_user, secret_sauce, true, User chuẩn đăng nhập thành công)">testLoginFromJson(standard_user, secret_sauce, true, User chuẩn đăng nhập thành công)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.UserLoginTest" class="method navigator-link" hash-for-method="testLoginFromJson(locked_out_user, secret_sauce, false, User bị khóa tài khoản)">testLoginFromJson(locked_out_user, secret_sauce, false, User bị khóa tài khoản)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginNegative(standard_user, , Epic sadface: Password is required, Bỏ trống mật khẩu)">testLoginNegative(standard_user, , Epic sadface: Password is required, Bỏ trống mật khẩu)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginNegative(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out., User bị khóa tài...)">testLoginNegative(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out., User bị khóa tài...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginNegative(standard_user, wrong_pass, Epic sadface: Username and password do not match any user in this service...)">testLoginNegative(standard_user, wrong_pass, Epic sadface: Username and password do not match any user in this service...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginNegative(wrong_user, secret_sauce, Epic sadface: Username and password do not match any user in this service,...)">testLoginNegative(wrong_user, secret_sauce, Epic sadface: Username and password do not match any user in this service,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginNegative(, secret_sauce, Epic sadface: Username is required, Bỏ trống tên đăng nhập)">testLoginNegative(, secret_sauce, Epic sadface: Username is required, Bỏ trống tên đăng nhập)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginSmoke(problem_user, secret_sauce, inventory.html, Đăng nhập thành công với user bị lỗi giao diện)">testLoginSmoke(problem_user, secret_sauce, inventory.html, Đăng nhập thành công với user bị lỗi giao diện)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginSmoke(standard_user, secret_sauce, inventory.html, Đăng nhập thành công với user chuẩn)">testLoginSmoke(standard_user, secret_sauce, inventory.html, Đăng nhập thành công với user chuẩn)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginDDTTest" class="method navigator-link" hash-for-method="testLoginSmoke(visual_user, secret_sauce, inventory.html, Đăng nhập thành công với user test UI)">testLoginSmoke(visual_user, secret_sauce, inventory.html, Đăng nhập thành công với user test UI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.FlakySimulationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlakyScenario">
+                  </a> <!-- testFlakyScenario -->
+                  <span class="method-name">testFlakyScenario</span>
+                  <div class="stack-trace">java.lang.AssertionError: Mô phỏng lỗi mạng tạm thời lần 1
+	at tests.FlakySimulationTest.testFlakyScenario(FlakySimulationTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test mô phỏng flaky fail 2 lần đầu, pass lần thứ 3)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginDDTTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginBoundary(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, secret_sauce, Epic sadface: Username and passwor...)">
+                  </a> <!-- testLoginBoundary(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, secret_sauce, Epic sadface: Username and passwor...) -->
+                  <span class="method-name">testLoginBoundary</span>
+                  <span class="parameters">(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,secret_sauce,Epic sadface: Username and password do not match any user in this service,Tên đăng nhập dài 50 ký tự)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginBoundary(&lt;script&gt;alert(1)&lt;/script&gt;, secret_sauce, Epic sadface: Username and password do not match any user i...)">
+                  </a> <!-- testLoginBoundary(<script>alert(1)</script>, secret_sauce, Epic sadface: Username and password do not match any user i...) -->
+                  <span class="method-name">testLoginBoundary</span>
+                  <span class="parameters">(<script>alert(1)</script>,secret_sauce,Epic sadface: Username and password do not match any user in this service,Tấn công XSS vào ô username)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginBoundary(admin&#039; OR &#039;1&#039;=&#039;1, secret_sauce, Epic sadface: Username and password do not match any user in this se...)">
+                  </a> <!-- testLoginBoundary(admin' OR '1'='1, secret_sauce, Epic sadface: Username and password do not match any user in this se...) -->
+                  <span class="method-name">testLoginBoundary</span>
+                  <span class="parameters">(admin' OR '1'='1,secret_sauce,Epic sadface: Username and password do not match any user in this service,Tấn công SQL Injection vào ô username)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginBoundary(standard_user, @#$%^&amp;*()_+{}[], Epic sadface: Username and password do not match any user in this se...)">
+                  </a> <!-- testLoginBoundary(standard_user, @#$%^&*()_+{}[], Epic sadface: Username and password do not match any user in this se...) -->
+                  <span class="method-name">testLoginBoundary</span>
+                  <span class="parameters">(standard_user,@#$%^&*()_+{}[],Epic sadface: Username and password do not match any user in this service,Password chứa ký tự đặc biệt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginNegative(standard_user, , Epic sadface: Password is required, Bỏ trống mật khẩu)">
+                  </a> <!-- testLoginNegative(standard_user, , Epic sadface: Password is required, Bỏ trống mật khẩu) -->
+                  <span class="method-name">testLoginNegative</span>
+                  <span class="parameters">(standard_user,,Epic sadface: Password is required,Bỏ trống mật khẩu)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginNegative(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out., User bị khóa tài...)">
+                  </a> <!-- testLoginNegative(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out., User bị khóa tài...) -->
+                  <span class="method-name">testLoginNegative</span>
+                  <span class="parameters">(locked_out_user,secret_sauce,Epic sadface: Sorry, this user has been locked out.,User bị khóa tài khoản)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginNegative(standard_user, wrong_pass, Epic sadface: Username and password do not match any user in this service...)">
+                  </a> <!-- testLoginNegative(standard_user, wrong_pass, Epic sadface: Username and password do not match any user in this service...) -->
+                  <span class="method-name">testLoginNegative</span>
+                  <span class="parameters">(standard_user,wrong_pass,Epic sadface: Username and password do not match any user in this service,Sai mật khẩu)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginNegative(wrong_user, secret_sauce, Epic sadface: Username and password do not match any user in this service,...)">
+                  </a> <!-- testLoginNegative(wrong_user, secret_sauce, Epic sadface: Username and password do not match any user in this service,...) -->
+                  <span class="method-name">testLoginNegative</span>
+                  <span class="parameters">(wrong_user,secret_sauce,Epic sadface: Username and password do not match any user in this service,Sai tên đăng nhập)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginNegative(, secret_sauce, Epic sadface: Username is required, Bỏ trống tên đăng nhập)">
+                  </a> <!-- testLoginNegative(, secret_sauce, Epic sadface: Username is required, Bỏ trống tên đăng nhập) -->
+                  <span class="method-name">testLoginNegative</span>
+                  <span class="parameters">(,secret_sauce,Epic sadface: Username is required,Bỏ trống tên đăng nhập)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSmoke(problem_user, secret_sauce, inventory.html, Đăng nhập thành công với user bị lỗi giao diện)">
+                  </a> <!-- testLoginSmoke(problem_user, secret_sauce, inventory.html, Đăng nhập thành công với user bị lỗi giao diện) -->
+                  <span class="method-name">testLoginSmoke</span>
+                  <span class="parameters">(problem_user,secret_sauce,inventory.html,Đăng nhập thành công với user bị lỗi giao diện)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSmoke(standard_user, secret_sauce, inventory.html, Đăng nhập thành công với user chuẩn)">
+                  </a> <!-- testLoginSmoke(standard_user, secret_sauce, inventory.html, Đăng nhập thành công với user chuẩn) -->
+                  <span class="method-name">testLoginSmoke</span>
+                  <span class="parameters">(standard_user,secret_sauce,inventory.html,Đăng nhập thành công với user chuẩn)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSmoke(visual_user, secret_sauce, inventory.html, Đăng nhập thành công với user test UI)">
+                  </a> <!-- testLoginSmoke(visual_user, secret_sauce, inventory.html, Đăng nhập thành công với user test UI) -->
+                  <span class="method-name">testLoginSmoke</span>
+                  <span class="parameters">(visual_user,secret_sauce,inventory.html,Đăng nhập thành công với user test UI)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UserLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginFromJson(performance_glitch_user, secret_sauce, true, User bị delay khi đăng nhập)">
+                  </a> <!-- testLoginFromJson(performance_glitch_user, secret_sauce, true, User bị delay khi đăng nhập) -->
+                  <span class="method-name">testLoginFromJson</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce,true,User bị delay khi đăng nhập)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginFromJson(admin_user, wrong_pass, false, Sai mật khẩu đăng nhập)">
+                  </a> <!-- testLoginFromJson(admin_user, wrong_pass, false, Sai mật khẩu đăng nhập) -->
+                  <span class="method-name">testLoginFromJson</span>
+                  <span class="parameters">(admin_user,wrong_pass,false,Sai mật khẩu đăng nhập)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginFromJson(problem_user, secret_sauce, true, User bị lỗi hiển thị sản phẩm)">
+                  </a> <!-- testLoginFromJson(problem_user, secret_sauce, true, User bị lỗi hiển thị sản phẩm) -->
+                  <span class="method-name">testLoginFromJson</span>
+                  <span class="parameters">(problem_user,secret_sauce,true,User bị lỗi hiển thị sản phẩm)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginFromJson(standard_user, secret_sauce, true, User chuẩn đăng nhập thành công)">
+                  </a> <!-- testLoginFromJson(standard_user, secret_sauce, true, User chuẩn đăng nhập thành công) -->
+                  <span class="method-name">testLoginFromJson</span>
+                  <span class="parameters">(standard_user,secret_sauce,true,User chuẩn đăng nhập thành công)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginFromJson(locked_out_user, secret_sauce, false, User bị khóa tài khoản)">
+                  </a> <!-- testLoginFromJson(locked_out_user, secret_sauce, false, User bị khóa tài khoản) -->
+                  <span class="method-name">testLoginFromJson</span>
+                  <span class="parameters">(locked_out_user,secret_sauce,false,User bị khóa tài khoản)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutWithFakerData">
+                  </a> <!-- testCheckoutWithFakerData -->
+                  <span class="method-name">testCheckoutWithFakerData</span>
+                  <em>
+(Test sinh dữ liệu ngẫu nhiên với Java Faker)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CheckoutTest&quot;/&gt;
+      &lt;class name=&quot;tests.FlakySimulationTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginDDTTest&quot;/&gt;
+      &lt;class name=&quot;tests.UserLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginBoundary</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginNegative</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginSmoke</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginSmoke</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLoginFromJson')
+data.setCell(0, 2, 'tests.UserLoginTest')
+data.setCell(0, 3, 5532);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLoginBoundary')
+data.setCell(1, 2, 'tests.LoginDDTTest')
+data.setCell(1, 3, 698);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLoginFromJson')
+data.setCell(2, 2, 'tests.UserLoginTest')
+data.setCell(2, 3, 692);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLoginNegative')
+data.setCell(3, 2, 'tests.LoginDDTTest')
+data.setCell(3, 3, 689);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLoginBoundary')
+data.setCell(4, 2, 'tests.LoginDDTTest')
+data.setCell(4, 3, 657);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLoginSmoke')
+data.setCell(5, 2, 'tests.LoginDDTTest')
+data.setCell(5, 3, 655);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLoginBoundary')
+data.setCell(6, 2, 'tests.LoginDDTTest')
+data.setCell(6, 3, 649);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLoginFromJson')
+data.setCell(7, 2, 'tests.UserLoginTest')
+data.setCell(7, 3, 645);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLoginNegative')
+data.setCell(8, 2, 'tests.LoginDDTTest')
+data.setCell(8, 3, 616);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLoginNegative')
+data.setCell(9, 2, 'tests.LoginDDTTest')
+data.setCell(9, 3, 588);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLoginSmoke')
+data.setCell(10, 2, 'tests.LoginDDTTest')
+data.setCell(10, 3, 580);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testLoginBoundary')
+data.setCell(11, 2, 'tests.LoginDDTTest')
+data.setCell(11, 3, 575);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testLoginSmoke')
+data.setCell(12, 2, 'tests.LoginDDTTest')
+data.setCell(12, 3, 571);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testLoginNegative')
+data.setCell(13, 2, 'tests.LoginDDTTest')
+data.setCell(13, 3, 571);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLoginFromJson')
+data.setCell(14, 2, 'tests.UserLoginTest')
+data.setCell(14, 3, 561);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLoginNegative')
+data.setCell(15, 2, 'tests.LoginDDTTest')
+data.setCell(15, 3, 553);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testLoginFromJson')
+data.setCell(16, 2, 'tests.UserLoginTest')
+data.setCell(16, 3, 501);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testCheckoutWithFakerData')
+data.setCell(17, 2, 'tests.CheckoutTest')
+data.setCell(17, 3, 65);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testFlakyScenario')
+data.setCell(18, 2, 'tests.FlakySimulationTest')
+data.setCell(18, 3, 2);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutWithFakerData</span>
+                <span class="method-start">2794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCheckoutWithFakerData status=SUCCESS method=CheckoutTest.testCheckoutWithFakerD...)</span>
+                <span class="method-start">2860 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FlakySimulationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">2953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFlakyScenario</span>
+                <span class="method-start">4513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testFlakyScenario status=FAILURE method=FlakySimulationTest.testFlakyScenario()[pri...)</span>
+                <span class="method-start">4519 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDDTTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">5111 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginBoundary(<script>alert(1)</script>, secret_sauce, Epic sadface: Username and password do not match any user i...)</span>
+                <span class="method-start">6057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginBoundary status=SUCCESS method=LoginDDTTest.testLoginBoundary(java.lang.St...)</span>
+                <span class="method-start">6756 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">6842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginBoundary(admin' OR '1'='1, secret_sauce, Epic sadface: Username and password do not match any user in this se...)</span>
+                <span class="method-start">7782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginBoundary status=SUCCESS method=LoginDDTTest.testLoginBoundary(java.lang.St...)</span>
+                <span class="method-start">8440 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">8520 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginBoundary(standard_user, @#$%^&*()_+{}[], Epic sadface: Username and password do not match any user in this se...)</span>
+                <span class="method-start">9490 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginBoundary status=SUCCESS method=LoginDDTTest.testLoginBoundary(java.lang.St...)</span>
+                <span class="method-start">10066 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">10144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginBoundary(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, secret_sauce, Epic sadface: Username and passwor...)</span>
+                <span class="method-start">11062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginBoundary status=SUCCESS method=LoginDDTTest.testLoginBoundary(java.lang.St...)</span>
+                <span class="method-start">11711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">11811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginNegative(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out., User bị khóa tài...)</span>
+                <span class="method-start">12785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginNegative status=SUCCESS method=LoginDDTTest.testLoginNegative(java.lang.St...)</span>
+                <span class="method-start">13474 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">13555 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginNegative(standard_user, wrong_pass, Epic sadface: Username and password do not match any user in this service...)</span>
+                <span class="method-start">14431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginNegative status=SUCCESS method=LoginDDTTest.testLoginNegative(java.lang.St...)</span>
+                <span class="method-start">15020 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">15104 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginNegative(wrong_user, secret_sauce, Epic sadface: Username and password do not match any user in this service,...)</span>
+                <span class="method-start">16142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginNegative status=SUCCESS method=LoginDDTTest.testLoginNegative(java.lang.St...)</span>
+                <span class="method-start">16758 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">16835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginNegative(, secret_sauce, Epic sadface: Username is required, Bỏ trống tên đăng nhập)</span>
+                <span class="method-start">17789 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginNegative status=SUCCESS method=LoginDDTTest.testLoginNegative(java.lang.St...)</span>
+                <span class="method-start">18360 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">18442 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginNegative(standard_user, , Epic sadface: Password is required, Bỏ trống mật khẩu)</span>
+                <span class="method-start">19410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginNegative status=SUCCESS method=LoginDDTTest.testLoginNegative(java.lang.St...)</span>
+                <span class="method-start">19964 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">20065 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginSmoke(standard_user, secret_sauce, inventory.html, Đăng nhập thành công với user chuẩn)</span>
+                <span class="method-start">20974 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginSmoke status=SUCCESS method=LoginDDTTest.testLoginSmoke(java.lang.String,j...)</span>
+                <span class="method-start">21555 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">21635 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginSmoke(problem_user, secret_sauce, inventory.html, Đăng nhập thành công với user bị lỗi giao diện)</span>
+                <span class="method-start">22647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginSmoke status=SUCCESS method=LoginDDTTest.testLoginSmoke(java.lang.String,j...)</span>
+                <span class="method-start">23218 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">23294 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginSmoke(visual_user, secret_sauce, inventory.html, Đăng nhập thành công với user test UI)</span>
+                <span class="method-start">24267 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginSmoke status=SUCCESS method=LoginDDTTest.testLoginSmoke(java.lang.String,j...)</span>
+                <span class="method-start">24922 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UserLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">25270 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginFromJson(standard_user, secret_sauce, true, User chuẩn đăng nhập thành công)</span>
+                <span class="method-start">26165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginFromJson status=SUCCESS method=UserLoginTest.testLoginFromJson(java.lang.S...)</span>
+                <span class="method-start">26811 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">26893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginFromJson(locked_out_user, secret_sauce, false, User bị khóa tài khoản)</span>
+                <span class="method-start">27878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginFromJson status=SUCCESS method=UserLoginTest.testLoginFromJson(java.lang.S...)</span>
+                <span class="method-start">28440 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">28523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginFromJson(problem_user, secret_sauce, true, User bị lỗi hiển thị sản phẩm)</span>
+                <span class="method-start">29610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginFromJson status=SUCCESS method=UserLoginTest.testLoginFromJson(java.lang.S...)</span>
+                <span class="method-start">30302 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">30379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginFromJson(performance_glitch_user, secret_sauce, true, User bị delay khi đăng nhập)</span>
+                <span class="method-start">31332 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginFromJson status=SUCCESS method=UserLoginTest.testLoginFromJson(java.lang.S...)</span>
+                <span class="method-start">36864 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, dev)</span>
+                <span class="method-start">36943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginFromJson(admin_user, wrong_pass, false, Sai mật khẩu đăng nhập)</span>
+                <span class="method-start">37883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testLoginFromJson status=SUCCESS method=UserLoginTest.testLoginFromJson(java.lang.S...)</span>
+                <span class="method-start">38385 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
